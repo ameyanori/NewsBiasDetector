@@ -9,6 +9,12 @@ from pathlib import Path
 
 import streamlit as st
 
+import sys
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
 from src.explain import explain_single_baseline_prediction
 from src.predict import load_saved_model
 from src.preprocess import mask_outlet_names_in_text
