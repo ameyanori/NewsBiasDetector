@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore large/local training artifacts.
+models/transformer/
+models/**/checkpoint-*/
+data/processed/
+
+# Keep baseline model directory for Streamlit deployment.
+!models/
+!models/baseline/
+!models/baseline/.gitkeep
+!models/baseline/*.joblib
+models/transformer/

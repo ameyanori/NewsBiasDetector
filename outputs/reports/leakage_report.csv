@@ -1,0 +1,5 @@
+check,matches,fraction
+label_token_left,4379,0.2566973445102292
+label_token_center,2926,0.17152236356175626
+label_token_right,5727,0.33571721671844773
+outlet_residual_tokens_after_pipeline,0,0.0
